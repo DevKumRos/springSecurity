@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Page</title>
+<title>Logout Page</title>
 </head>
 <body>
-Home Page here <br>
-<a href="/logout">Logout</a>
-
+Logout Home<br> <a href="/home">Home</a>
 </body>
 </html>

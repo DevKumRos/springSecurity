@@ -15,4 +15,14 @@ public class HomeController {
 	public String test() {
 		return "test";
 	}
+	
+	@RequestMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
+	
+	@RequestMapping("/logout-success")
+	public String logoutPage() {
+		return "logout";
+	}
 }
