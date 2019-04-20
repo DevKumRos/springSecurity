@@ -25,7 +25,7 @@ public class SecurityConfigurationUserDataFromDB extends WebSecurityConfigurerAd
 		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
 		authenticationProvider.setUserDetailsService(userDetailsService);
 		//For Unencrptyed password in DB
-		//authenticationProvider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
+		//AuthenticationProvider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
 		//For Encrpyted password in DB
 		authenticationProvider.setPasswordEncoder(new BCryptPasswordEncoder(10));
 		return authenticationProvider;
